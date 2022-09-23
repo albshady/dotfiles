@@ -21,13 +21,9 @@ alias gswml='gswm && gl'
 alias k=kubectl
 alias l=lab
 alias la='lsd -lAh'
-alias ls=lsd
 alias ll='lsd -lh'
 alias lmrb='lab mr browse'
 alias lrb='lab repo browse'
 alias nv=nvim
 alias py=python
 alias t=tmux
-alias zsource='source ~/.zshrc'
-
-eval $(thefuck --alias)
