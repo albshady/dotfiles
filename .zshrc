@@ -86,6 +86,7 @@ plugins=(
     poetry
     ripgrep
     rust
+    thefuck
     tmux
     zsh-autosuggestions
     zsh-poetry
