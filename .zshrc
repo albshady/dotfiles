@@ -84,6 +84,7 @@ plugins=(
     git
     fast-syntax-highlighting
     poetry
+    tmux
     zsh-autosuggestions
     zsh-poetry
     zsh-vi-mode

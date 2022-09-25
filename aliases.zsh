@@ -30,4 +30,3 @@ alias lmrb='lab mr browse'
 alias lrb='lab repo browse'
 alias nv=nvim
 alias py=python
-alias t=tmux
