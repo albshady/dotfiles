@@ -10,6 +10,3 @@
 [submodule "plugins/zsh-colored-man-pages"]
 	path = plugins/zsh-colored-man-pages
 	url = git@github.com:ael-code/zsh-colored-man-pages.git
-[submodule "plugins/antidote"]
-	path = plugins/antidote
-	url = git@github.com:mattmc3/antidote.git

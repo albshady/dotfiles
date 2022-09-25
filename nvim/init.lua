@@ -81,7 +81,7 @@ local config = {
       },
       {
         "averms/black-nvim",
-      }
+      },
     },
     -- All other entries override the setup() call for default plugins
     ["null-ls"] = function(config)
@@ -139,10 +139,11 @@ local config = {
         ["<leader>"] = {
           -- which-key registration table for normal mode, leader prefix
           -- ["N"] = { "<cmd>tabnew<cr>", "New Buffer" },
-        },
-        ["g"] = {
-          ["n"] = { "<cmd>bn<cr>", "Go to the next buffer" },
-          ["p"] = { "<cmd>bp<cr>", "Go to the previous buffer"},
+          ["b"] = {
+            ["d"] = { "<cmd>bd<cr>", "Delete buffer" },
+            ["n"] = { "<cmd>bn<cr>", "Go to the next buffer" },
+            ["p"] = { "<cmd>bp<cr>", "Go to the previous buffer"},
+          },
         },
       },
     },

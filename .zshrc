@@ -117,15 +117,3 @@ export LANG=en_US.UTF-8
 
 # To customize prompt, run `p10k configure` or edit $DOTFILES/p10k.zsh.
 source $DOTFILES/p10k.zsh
-
-autoload -Uz compinit
-zstyle ':completion:*' menu select
-fpath+=~/.zfunc
-
-# init zoxide
-eval "$(zoxide init zsh)"
-
-# heroku autocomplete setup
-HEROKU_AC_ZSH_SETUP_PATH=/Users/albert/Library/Caches/heroku/autocomplete/zsh_setup && test -f $HEROKU_AC_ZSH_SETUP_PATH && source $HEROKU_AC_ZSH_SETUP_PATH;
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
