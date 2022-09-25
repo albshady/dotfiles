@@ -84,6 +84,8 @@ plugins=(
     git
     fast-syntax-highlighting
     poetry
+    ripgrep
+    rust
     tmux
     zsh-autosuggestions
     zsh-poetry
