@@ -1,12 +1,12 @@
-# Load dotfiles binaries
-export PATH="$DOTFILES/bin:$PATH"
-
 # Load user local binaries
-# export PATH=/usr/local/bin:$PATH
+export PATH=/usr/local/bin:$PATH
 export PATH=$HOME/.local/bin:$PATH
 
 # Load pyenv global installed binaries
 export PATH=$HOME/.pyenv/shims:$PATH
+
+# Load dotfiles binaries
+export PATH="$DOTFILES/bin:$PATH"
 
 # The next line updates PATH for the Google Cloud SDK.
 . ~/.config/google-cloud-sdk/path.zsh.inc
