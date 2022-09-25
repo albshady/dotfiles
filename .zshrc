@@ -85,6 +85,8 @@ plugins=(
     fast-syntax-highlighting
     poetry
     zsh-autosuggestions
+    zsh-poetry
+    zsh-vi-mode
 )
 
 source $ZSH/oh-my-zsh.sh

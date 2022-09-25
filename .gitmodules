@@ -10,3 +10,9 @@
 [submodule "plugins/zsh-colored-man-pages"]
 	path = plugins/zsh-colored-man-pages
 	url = git@github.com:ael-code/zsh-colored-man-pages.git
+[submodule "plugins/zsh-poetry"]
+	path = plugins/zsh-poetry
+	url = git@github.com:darvid/zsh-poetry.git
+[submodule "plugins/zsh-vi-mode"]
+	path = /Users/albert/.config/dotfiles/plugins/zsh-vi-mode
+	url = https://github.com/jeffreytse/zsh-vi-mode
