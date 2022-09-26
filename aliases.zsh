@@ -22,6 +22,7 @@ alias gsma='git submodule add'
 alias gsmur='git submodule update --recursive'
 alias gsmuri='git submodule update --recursive --init'
 alias gswml='gswm && gl'
+alias ipy=ipython
 alias k=kubectl
 alias l=lab
 alias la='lsd -lAh'
