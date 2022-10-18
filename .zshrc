@@ -75,6 +75,9 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Would you like to use another custom folder than $ZSH/custom?
 ZSH_CUSTOM=$DOTFILES
 
+# FIXME: find a better way to add /usr/local/bin before initiating plugins
+export PATH=/usr/local/bin:$PATH
+
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
