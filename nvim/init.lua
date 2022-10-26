@@ -150,8 +150,6 @@ local config = {
           -- ["N"] = { "<cmd>tabnew<cr>", "New Buffer" },
           ["b"] = {
             ["d"] = { "<cmd>bd<cr>", "Delete buffer" },
-            ["n"] = { "<cmd>bn<cr>", "Go to the next buffer" },
-            ["p"] = { "<cmd>bp<cr>", "Go to the previous buffer"},
           },
         },
       },
