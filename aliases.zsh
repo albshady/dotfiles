@@ -3,6 +3,7 @@ alias ohmyzsh="nvim ~/.oh-my-zsh"
 
 alias d=docker
 alias dlaunch='open /Applications/Docker.app'
+alias glswc='git pull && git switch -c'
 alias gii='gitmoji --init'
 alias gil='gitmoji --list'
 alias glfs='git lfs'
