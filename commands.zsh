@@ -38,3 +38,17 @@ function venv() {
     done
     echo "No ./.venv found" && return 1
 }
+
+git_release_branch () {
+        command git rev-parse --git-dir &> /dev/null || return
+        local branch
+        for branch in release
+        do
+                if command git show-ref -q --verify refs/heads/$branch
+                then
+                        echo $branch
+                        return
+                fi
+        done
+        echo release
+}
