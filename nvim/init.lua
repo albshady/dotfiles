@@ -268,6 +268,12 @@ local config = {
           })
         end
       },
+      {
+        "declancm/cinnamon.nvim",
+        config = function()
+          require("cinnamon").setup({})
+        end
+      }
     },
 
     -- All other entries override the require("<key>").setup({...}) call for default plugins
