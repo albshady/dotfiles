@@ -5,3 +5,5 @@ export DELTA_PAGER='less -R'
 
 # set bat color theme
 export BAT_THEME=Dracula
+
+export EDITOR=nvim
