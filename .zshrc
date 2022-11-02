@@ -91,6 +91,7 @@ plugins=(
     rust
     thefuck
     tmux
+    vi-mode
     zsh-autosuggestions
     zsh-poetry
 )
