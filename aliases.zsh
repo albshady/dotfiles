@@ -2,6 +2,7 @@ alias zshconfig="nvim ~/.zshrc"
 alias ohmyzsh="nvim ~/.oh-my-zsh"
 
 alias d=docker
+alias diff=colordiff
 alias dlaunch='open /Applications/Docker.app'
 alias glswc='git pull && git switch -c'
 alias gii='gitmoji --init'
