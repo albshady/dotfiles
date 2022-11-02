@@ -30,6 +30,7 @@ alias k=kubectl
 alias l=lab
 alias la='lsd -lAh'
 alias ll='lsd -lh'
+alias ls=lsd
 alias lmrn='lab mr new -dsa $(git_user_name)'
 alias nv=nvim
 alias py=python
