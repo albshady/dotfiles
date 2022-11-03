@@ -356,9 +356,13 @@ bind C-a send-prefix
 # don't exit copy mode after dragging with mouse
 unbind -T copy-mode-vi MouseDragEnd1Pane
 
-# Use <prefix> l to clear because C-l is taken by vim-tmux-navigator
+# use <prefix> l to clear because C-l is taken by vim-tmux-navigator
 unbind l
 bind l send-keys 'C-l'
+
+# use <prefix> h to reset logitech daemon
+unbind h
+bind h run "ps aux | rg -S 'LogiMgrDaemon' | rg -v 'rg' | awk '{print $2}' | xargs kill -9"
 
 
 # -- tpm -----------------------------------------------------------------------
