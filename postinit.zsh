@@ -1,3 +1,5 @@
+eval "$(starship init zsh)"
+
 autoload -Uz compinit
 zstyle ':completion:*' menu select
 fpath+=~/.zfunc

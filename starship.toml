@@ -1,0 +1,23 @@
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+[character]
+success_symbol = "[➜](bold green)"
+error_symbol = "[➜](bold red)"
+
+[directory]
+truncation_length = 8
+truncate_to_repo = false
+repo_root_style = "bold green"
+
+[git_branch]
+format = "[$symbol$branch(:$remote_branch)]($style) "
+
+[python]
+format = "[${symbol}${pyenv_prefix}(${version} )]($style)"
+
+[package]
+disabled = true
+
+[gcloud]
+disabled = true
