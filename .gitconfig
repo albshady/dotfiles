@@ -1,7 +1,6 @@
 # This is Git's per-user configuration file.
 [user]
-	name = Albert Shaidullin
-	email = 3litac@gmail.com
+	useConfigOnly = true
 [pull]
 	ff = only
 [filter "lfs"]
