@@ -38,3 +38,4 @@ alias lmrn='lab mr new -dsa $(git_user_name)'
 alias nv=nvim
 alias psh='poetry shell'
 alias py=python
+alias rm=trash
