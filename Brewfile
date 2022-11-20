@@ -37,6 +37,7 @@ brew 'tldr'
 brew 'tmux'
 brew 'translate-shell'
 brew 'tunnelblick'
+brew 'wget'
 brew 'zlib'
 brew 'zoxide'
 
