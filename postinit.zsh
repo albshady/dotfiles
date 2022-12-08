@@ -13,3 +13,6 @@ HEROKU_AC_ZSH_SETUP_PATH=/Users/albert/Library/Caches/heroku/autocomplete/zsh_se
 
 # colored-man-pages
 source $ZSH_CUSTOM/plugins/zsh-colored-man-pages/colored-man-pages.plugin.zsh
+
+# init poetry venv
+# poetry-shell

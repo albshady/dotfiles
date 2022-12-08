@@ -86,7 +86,7 @@ plugins=(
     tmux
     vi-mode
     zsh-autosuggestions
-    zsh-poetry
+    # zsh-poetry
 )
 
 source $ZSH/oh-my-zsh.sh
