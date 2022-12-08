@@ -16,3 +16,6 @@
 [submodule "plugins/zsh-vi-mode"]
 	path = /Users/albert/.config/dotfiles/plugins/zsh-vi-mode
 	url = https://github.com/jeffreytse/zsh-vi-mode
+[submodule "plugins/zsh-activate-py-environment"]
+	path = plugins/zsh-activate-py-environment
+	url = git@github.com:se-jaeger/zsh-activate-py-environment.git
