@@ -5,6 +5,9 @@ export PATH=$HOME/.local/bin:$PATH
 # Load pyenv global installed binaries
 export PATH=$HOME/.pyenv/shims:$PATH
 
+# Load flutter tool
+export PATH=$HOME/code/packages/flutter/bin:$PATH
+
 # Load dotfiles binaries
 export PATH="$DOTFILES/bin:$PATH"
 
