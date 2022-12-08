@@ -39,3 +39,4 @@ alias nv=nvim
 alias psh='poetry shell'
 alias py=python
 alias rm=trash
+alias wd='webdoc open'
