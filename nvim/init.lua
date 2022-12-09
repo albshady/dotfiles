@@ -273,7 +273,17 @@ local config = {
         config = function()
           require("cinnamon").setup({})
         end
-      }
+      },
+      {
+        "akinsho/flutter-tools.nvim",
+        requires = "nvim-lua/plenary.nvim",
+        after = "mason-lspconfig.nvim", -- make sure to load after mason-lspconfig
+        config = function()
+          require("flutter-tools").setup {
+            lsp = astronvim.lsp.server_settings "dartls", -- get the server settings and built in capabilities/on_attach
+          }
+        end,
+      },
     },
 
     -- All other entries override the require("<key>").setup({...}) call for default plugins
