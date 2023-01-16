@@ -137,6 +137,7 @@ local config = {
 
   -- Extend LSP configuration
   lsp = {
+    skip_setup = { "dartls" }, -- skip lsp setup because flutter-tools will do it itself
     -- enable servers that you already have installed without mason
     servers = {
       -- "pyright"
@@ -196,6 +197,16 @@ local config = {
               typeCheckingMode = "on",
             },
           },
+        },
+      },
+      dartls = {
+        -- any changes you want to make to the LSP setup, for example
+        color = {
+          enabled = true,
+        },
+        settings = {
+          showTodos = true,
+          completeFunctionCalls = true,
         },
       },
     },
@@ -307,6 +318,7 @@ local config = {
     -- use mason-lspconfig to configure LSP installations
     ["mason-lspconfig"] = { -- overrides `require("mason-lspconfig").setup(...)`
       -- ensure_installed = { "sumneko_lua" },
+      -- ensure_installed = { "dartls" },
     },
     -- use mason-null-ls to configure Formatters/Linter installation for null-ls sources
     ["mason-null-ls"] = { -- overrides `require("mason-null-ls").setup(...)`
