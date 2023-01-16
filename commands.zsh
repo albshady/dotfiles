@@ -28,7 +28,7 @@ function repo() {
 function venv() {
     CWD="$(dirname $0)"
 
-    for version in "" "3.10" "3.9" "3.8" "3.7" "3.6"
+    for version in "" "3.11" "3.10" "3.9" "3.8" "3.7" "3.6"
     do
         activate_file="${CWD}/.venv${version}/bin/activate"
         # echo "Trying activating: ${activate_file}"
