@@ -312,6 +312,7 @@ local config = {
       }
       return config -- return final config table
     end,
+
     treesitter = { -- overrides `require("treesitter").setup(...)`
       -- ensure_installed = { "lua" },
     },
