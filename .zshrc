@@ -79,6 +79,7 @@ export PATH=/usr/local/bin:$PATH
 plugins=(
     git
     fast-syntax-highlighting
+    kubectl
     poetry
     ripgrep
     rust
