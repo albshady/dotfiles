@@ -8,16 +8,16 @@ local config = {
 
   -- Configure AstroNvim updates
   updater = {
-    remote = "origin", -- remote to use
-    channel = "nightly", -- "stable" or "nightly"
-    version = "latest", -- "latest", tag name, or regex search like "v1.*" to only do updates before v2 (STABLE ONLY)
-    branch = "main", -- branch name (NIGHTLY ONLY)
-    commit = nil, -- commit hash (NIGHTLY ONLY)
-    pin_plugins = nil, -- nil, true, false (nil will pin plugins on stable only)
-    skip_prompts = false, -- skip prompts about breaking changes
+    remote = "origin",     -- remote to use
+    channel = "nightly",   -- "stable" or "nightly"
+    version = "latest",    -- "latest", tag name, or regex search like "v1.*" to only do updates before v2 (STABLE ONLY)
+    branch = "main",       -- branch name (NIGHTLY ONLY)
+    commit = nil,          -- commit hash (NIGHTLY ONLY)
+    pin_plugins = nil,     -- nil, true, false (nil will pin plugins on stable only)
+    skip_prompts = false,  -- skip prompts about breaking changes
     show_changelog = true, -- show the changelog after performing an update
-    auto_reload = false, -- automatically reload and sync packer after a successful update
-    auto_quit = false, -- automatically quit the current session after a successful update
+    auto_reload = false,   -- automatically reload and sync packer after a successful update
+    auto_quit = false,     -- automatically quit the current session after a successful update
     -- remotes = { -- easily add new remotes to track
     --   ["remote_name"] = "https://remote_url.come/repo.git", -- full remote url
     --   ["remote2"] = "github_user/repo", -- GitHub user/repo shortcut,
@@ -43,20 +43,20 @@ local config = {
     opt = {
       -- set to true or false etc.
       colorcolumn = '88',
-      cursorline = false, -- Don't highlight the text line of the cursor
-      number = true, -- sets vim.opt.number
+      cursorline = false,    -- Don't highlight the text line of the cursor
+      number = true,         -- sets vim.opt.number
       relativenumber = true, -- sets vim.opt.relativenumber
-      signcolumn = "auto", -- sets vim.opt.signcolumn to auto
-      spell = false, -- sets vim.opt.spell
-      wrap = false, -- sets vim.opt.wrap
+      signcolumn = "auto",   -- sets vim.opt.signcolumn to auto
+      spell = false,         -- sets vim.opt.spell
+      wrap = false,          -- sets vim.opt.wrap
     },
     g = {
-      autoformat_enabled = true, -- enable or disable auto formatting at start (lsp.formatting.format_on_save must be enabled)
-      autopairs_enabled = true, -- enable autopairs at start
-      cmp_enabled = true, -- enable completion at start
-      diagnostics_enabled = true, -- enable diagnostics at start
-      icons_enabled = true, -- disable icons in the UI (disable if no nerd font is available, requires :PackerSync after changing)
-      mapleader = " ", -- sets vim.g.mapleader
+      autoformat_enabled = true,         -- enable or disable auto formatting at start (lsp.formatting.format_on_save must be enabled)
+      autopairs_enabled = true,          -- enable autopairs at start
+      cmp_enabled = true,                -- enable completion at start
+      diagnostics_enabled = true,        -- enable diagnostics at start
+      icons_enabled = true,              -- disable icons in the UI (disable if no nerd font is available, requires :PackerSync after changing)
+      mapleader = " ",                   -- sets vim.g.mapleader
       status_diagnostics_enabled = true, -- enable diagnostics in statusline
     },
   },
@@ -145,7 +145,7 @@ local config = {
     formatting = {
       -- control auto formatting on save
       format_on_save = {
-        enabled = true, -- enable or disable format on save globally
+        enabled = true,     -- enable or disable format on save globally
         allow_filetypes = { -- enable format on save for specified filetypes only
           -- "go",
         },
@@ -194,7 +194,7 @@ local config = {
         settings = {
           python = {
             analysis = {
-              typeCheckingMode = "on",
+              typeCheckingMode = "basic",
             },
           },
         },
@@ -298,20 +298,20 @@ local config = {
     },
 
     -- All other entries override the require("<key>").setup({...}) call for default plugins
-    ["null-ls"] = function(config) -- overrides `require("null-ls").setup(config)`
-      -- config variable is the default configuration table for the setup function call
-      -- local null_ls = require "null-ls"
-
-      -- Check supported formatters and linters
-      -- https://github.com/jose-elias-alvarez/null-ls.nvim/tree/main/lua/null-ls/builtins/formatting
-      -- https://github.com/jose-elias-alvarez/null-ls.nvim/tree/main/lua/null-ls/builtins/diagnostics
-      config.sources = {
-        -- Set a formatter
-        -- null_ls.builtins.formatting.stylua,
-        -- null_ls.builtins.formatting.prettier,
-      }
-      return config -- return final config table
-    end,
+    -- ["null-ls"] = function(config) -- overrides `require("null-ls").setup(config)`
+    --   -- config variable is the default configuration table for the setup function call
+    --   -- local null_ls = require "null-ls"
+    --
+    --   -- Check supported formatters and linters
+    --   -- https://github.com/jose-elias-alvarez/null-ls.nvim/tree/main/lua/null-ls/builtins/formatting
+    --   -- https://github.com/jose-elias-alvarez/null-ls.nvim/tree/main/lua/null-ls/builtins/diagnostics
+    --   config.sources = {
+    --     -- Set a formatter
+    --     -- null_ls.builtins.formatting.stylua,
+    --     -- null_ls.builtins.formatting.prettier,
+    --   }
+    --   return config -- return final config table
+    -- end,
 
     treesitter = { -- overrides `require("treesitter").setup(...)`
       -- ensure_installed = { "lua" },
@@ -322,9 +322,9 @@ local config = {
       -- ensure_installed = { "dartls" },
     },
     -- use mason-null-ls to configure Formatters/Linter installation for null-ls sources
-    ["mason-null-ls"] = { -- overrides `require("mason-null-ls").setup(...)`
-      -- ensure_installed = { "prettier", "stylua" },
-    },
+    -- ["mason-null-ls"] = { -- overrides `require("mason-null-ls").setup(...)`
+    --   -- ensure_installed = { "prettier", "stylua" },
+    -- },
   },
 
   -- LuaSnip Options
@@ -406,7 +406,6 @@ local config = {
       group = "trim_on_save",
       command = ":%s/\\($\\n\\s*\\)\\+\\%$//e",
     })
-
   end,
 }
 
