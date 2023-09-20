@@ -77,9 +77,11 @@ export PATH=/usr/local/bin:$PATH
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
+    direnv
     git
     fast-syntax-highlighting
     kubectl
+    per-directory-history
     poetry
     ripgrep
     rust
