@@ -19,3 +19,6 @@
 [submodule "plugins/zsh-activate-py-environment"]
 	path = plugins/zsh-activate-py-environment
 	url = git@github.com:se-jaeger/zsh-activate-py-environment.git
+[submodule "astronvim"]
+	path = astronvim
+	url = git@github.com:albshady/astronvim-config.git
