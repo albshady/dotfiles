@@ -14,7 +14,7 @@ repo_root_style = "bold green"
 format = "[$symbol$branch(:$remote_branch)]($style) "
 
 [python]
-format = "[${symbol}${pyenv_prefix}(${version} )]($style)"
+format = "[${symbol}${pyenv_prefix}(${virtualenv} )]($style)"
 
 [cmd_duration]
 min_time = 10_000
