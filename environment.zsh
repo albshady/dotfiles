@@ -7,3 +7,4 @@ export DELTA_PAGER='less -R'
 export BAT_THEME=Dracula
 
 export EDITOR=nvim
+export KUBECTL_IN_PROMPT_FILENAME='.show-prompt.k8s'

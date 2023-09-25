@@ -29,6 +29,7 @@ alias gsmuri='git submodule update --recursive --init'
 alias gswml='gswm && gl'
 alias gswr='git switch $git_release_branch'
 alias ipy=ipython
+alias kk='[[ -e $KUBECTL_IN_PROMPT_FILENAME ]] && rm $KUBECTL_IN_PROMPT_FILENAME || touch $KUBECTL_IN_PROMPT_FILENAME'
 alias l=lab
 alias la='lsd -lAh'
 alias ll='lsd -lh'
