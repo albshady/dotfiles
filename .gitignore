@@ -1,2 +1,7 @@
+.DS_STORE
+
+*.backup
+*.prev-version
+
 backup.zshrc
 private.zsh
