@@ -81,13 +81,13 @@ plugins=(
     git
     fast-syntax-highlighting
     kubectl
-    per-directory-history
     poetry
     ripgrep
     rust
     thefuck
     tmux
     vi-mode
+    per-directory-history  # ctrl-G conflicts with vi-mode
     zsh-autosuggestions
     # zsh-poetry
 )
