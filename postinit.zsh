@@ -16,3 +16,6 @@ source $ZSH_CUSTOM/plugins/zsh-colored-man-pages/colored-man-pages.plugin.zsh
 
 # init poetry venv
 # poetry-shell
+
+# pyenv
+eval "$(pyenv init -)"

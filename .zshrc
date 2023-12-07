@@ -69,7 +69,7 @@ export ZSH="$HOME/.config/oh-my-zsh"
 ZSH_CUSTOM=$DOTFILES
 
 # FIXME: find a better way to add /usr/local/bin before initiating plugins
-export PATH=/usr/local/bin:$PATH
+export PATH=/opt/homebrew/bin:$PATH
 
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/

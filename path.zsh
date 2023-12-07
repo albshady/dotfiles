@@ -1,9 +1,10 @@
 # Load user local binaries
 export PATH=/usr/local/bin:$PATH
 export PATH=$HOME/.local/bin:$PATH
+# export PATH=/opt/homebrew/bin:$PATH
 
 # Load pyenv global installed binaries
-export PATH=$HOME/.pyenv/shims:$PATH
+# export PATH=$HOME/.pyenv/shims:$PATH
 
 # Load flutter tool
 export PATH=$HOME/code/packages/flutter/bin:$PATH
@@ -17,4 +18,4 @@ export PATH="$DOTFILES/bin:$PATH"
 # Make sure coreutils are loaded before system commands
 # I've disabled this for now because I only use "ls" which is
 # referenced in my aliases.zsh file directly.
-#export PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
+# export PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
