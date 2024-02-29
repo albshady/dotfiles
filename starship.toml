@@ -28,3 +28,6 @@ disabled = true
 [kubernetes]
 disabled = false
 detect_files = [".show-prompt.k8s"]
+
+[docker_context]
+disabled = true
