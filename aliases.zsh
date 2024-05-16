@@ -3,7 +3,7 @@ alias ohmyzsh="nvim ~/.oh-my-zsh"
 
 alias d=docker
 alias diff=colordiff
-alias dlaunch='open /Applications/Docker.app'
+alias direnv-venv='echo "source .venv/bin/activate" > .envrc && direnv allow'
 alias glswc='git pull && git switch -c'
 alias gcfa="git config user.name ${ASSAIA_GIT_USERNAME} && git config user.email ${ASSAIA_EMAIL}"
 alias gcfgh="git config user.name ${PERSONAL_GITHUB_USERNAME} && git config user.email ${PERSONAL_EMAIL}"
