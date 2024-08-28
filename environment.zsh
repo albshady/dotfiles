@@ -1,4 +1,6 @@
-export PKG_CONFIG_PATH="/usr/local/opt/zlib/lib/pkgconfig"
+# export PKG_CONFIG_PATH="/usr/local/opt/zlib/lib/pkgconfig"
+export PKG_CONFIG_PATH="/usr/local/opt/gstreamer/lib/pkgconfig:/usr/local/opt/gst-plugins-base/lib/pkgconfig"
+export GST_PLUGIN_PATH="~/.local/lib/gstreamer-1.0"
 
 # set delta pager to use less always
 export DELTA_PAGER='less -R'
