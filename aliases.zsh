@@ -1,6 +1,7 @@
 alias zshconfig="nvim ~/.zshrc"
 alias ohmyzsh="nvim ~/.oh-my-zsh"
 
+alias cat="bat --theme=\$(defaults read -globalDomain AppleInterfaceStyle &> /dev/null && echo default || echo GitHub)"
 alias d=docker
 alias diff=colordiff
 alias direnv-venv='echo "source .venv/bin/activate" > .envrc && direnv allow'
