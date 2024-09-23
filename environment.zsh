@@ -21,3 +21,6 @@ export DOCKER_BUILDKIT='1'
 if command -v colima &> /dev/null; then
     export DOCKER_HOST="unix://${HOME}/.colima/default/docker.sock"
 fi
+
+# suppress node warnings coming from gitmoji
+export NODE_OPTIONS='--no-warnings=ExperimentalWarning'
