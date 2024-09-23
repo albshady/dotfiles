@@ -15,6 +15,7 @@
 #set -ga terminal-overrides "*:kUP3=\e[1;9A,*:kDN3=\e[1;9B,*:kRIT3=\e[1;9C,*:kLFT3=\e[1;9D"
 # Enable colors and set cursor to underline
 set -ga terminal-overrides ",xterm-256color:Tc,*:Se=\033[4 q"
+set-option -sa terminal-features ',XXX:RGB'
 
 
 # -- windows & pane creation ---------------------------------------------------
