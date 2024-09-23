@@ -19,3 +19,6 @@ source $ZSH_CUSTOM/plugins/zsh-colored-man-pages/colored-man-pages.plugin.zsh
 
 # pyenv
 eval "$(pyenv init -)"
+
+# autocompletions
+source ~/.config/dotfiles/completions/hydra.zsh
