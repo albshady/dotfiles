@@ -3,6 +3,7 @@ alias ohmyzsh="nvim ~/.oh-my-zsh"
 
 alias cat="bat --theme=\$(defaults read -globalDomain AppleInterfaceStyle &> /dev/null && echo default || echo GitHub)"
 alias d=docker
+alias dsp="docker system prune"
 alias diff=colordiff
 alias direnv-venv='echo "source .venv/bin/activate" > .envrc && direnv allow'
 alias glswc='git pull && git switch -c'
@@ -38,11 +39,10 @@ alias kk='[[ -e $KUBECTL_IN_PROMPT_FILENAME ]] && rm $KUBECTL_IN_PROMPT_FILENAME
 alias kcnh='kubectl config set-context --current --namespace $(kubectl config current-context)-hive'
 alias kcni='kubectl config set-context --current --namespace $(kubectl config current-context)-id'
 alias kcnw='kubectl config set-context --current --namespace $(kubectl config current-context)-web'
-alias l=lab
+alias glmr='glab mr create --assignee $ASSAIA_GIT_USERNAME --squash-before-merge --remove-source-branch --title "$(compose-mr-title)" --no-editor'
 alias la='lsd -lAh'
 alias ll='lsd -lh'
 alias ls=lsd
-alias lmrn='lab mr new -dsa $(git_user_name)'
 alias nv=nvim
 alias pci="pre-commit install"
 alias pcu="pre-commit uninstall"

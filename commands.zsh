@@ -42,3 +42,12 @@ function venv() {
 git_user_name() {
     git config user.name
 }
+
+
+function compose-mr-title() {
+    branch_name=$(git rev-parse --abbrev-ref HEAD)
+    ticket_number=$(echo $branch_name | cut -d'-' -f1)
+    formatted_name=$(echo $branch_name | sed -r 's/^[0-9]+-//' | sed -r 's/-/ /g')
+    formatted_name=$(echo "$formatted_name" | awk '{print toupper(substr($0,1,1)) tolower(substr($0,2))}')
+    echo "$formatted_name Apron-SU/apron-su#$ticket_number"
+}
