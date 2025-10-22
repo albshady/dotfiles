@@ -6,7 +6,8 @@ export GST_PLUGIN_PATH="~/.local/lib/gstreamer-1.0"
 export DELTA_PAGER='less -R'
 
 # set bat color theme
-export BAT_THEME=Dracula
+export BAT_THEME_DARK=Dracula
+export BAT_THEME_LIGHT=GitHub
 
 export EDITOR=nvim
 export KUBECTL_IN_PROMPT_FILENAME='.show-prompt.k8s'
