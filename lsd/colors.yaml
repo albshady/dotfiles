@@ -1,0 +1,50 @@
+# GitHub Light Theme for lsd
+# Based on GitHub's light color scheme
+# Place this file at: ~/.config/lsd/colors.yaml
+# Then set in config.yaml: color: { theme: custom }
+
+user: 24      # Blue - github blue for user info
+group: 95     # Purple - subtle purple for group
+
+permission:
+  read: 28    # Dark green - readable permission
+  write: 136  # Orange/brown - write permission
+  exec: 124   # Red - executable permission
+  exec-sticky: 127  # Magenta - special permission
+  no-access: 244    # Light gray - no access
+  octal: 24   # Blue - octal notation
+  acl: 30     # Teal - ACL info
+  context: 31 # Cyan - SELinux context
+
+date:
+  hour-old: 28    # Green - very recent
+  day-old: 64     # Medium green - recent
+  older: 240      # Gray - older files
+
+size:
+  none: 244       # Light gray - no size/directory
+  small: 28       # Green - small files
+  medium: 136     # Orange - medium files
+  large: 124      # Red - large files
+
+inode:
+  valid: 95       # Purple - valid inode
+  invalid: 244    # Gray - invalid
+
+links:
+  valid: 24       # Blue - valid link count
+  invalid: 244    # Gray - invalid
+
+tree-edge: 240    # Gray - tree drawing characters
+
+git-status:
+  default: 244         # Gray - default
+  unmodified: 244      # Gray - unchanged
+  ignored: 244         # Gray - ignored files
+  new-in-index: 28     # Green - staged new
+  new-in-workdir: 34   # Lighter green - unstaged new
+  typechange: 136      # Orange - type changed
+  deleted: 124         # Red - deleted
+  renamed: 28          # Green - renamed
+  modified: 136        # Orange - modified
+  conflicted: 160      # Bright red - conflicts
